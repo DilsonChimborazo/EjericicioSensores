@@ -2,7 +2,7 @@ from django.db import models
 
 
 class Sensor(models.Model):
-    valor_sensor = models.FloatField()
+    valor_sensor = models.IntegerField()
     fecha_registro = models.DateTimeField(auto_now_add=True)
 
     def _str_(self):

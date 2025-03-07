@@ -1,8 +1,8 @@
 #include <WiFi.h>
 #include <HTTPClient.h>
 
-const char* ssid = " ";            
-const char* password = "";                  
+const char* ssid = "GLOBATECH CHINBORAZO";            
+const char* password = "1998Geminis";                  
 const char* serverName = "http://192.168.101.9:8000/api/sensores/";  
 
 const int sensorPin = 2;  
