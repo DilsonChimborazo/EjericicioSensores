@@ -11,7 +11,7 @@ export function useSensor() {
         socket.onmessage = (event) => {
             const data = JSON.parse(event.data);
             if (data && data.valor_sensor && data.fecha) {
-                setSensorData(data); // Actualizamos solo cuando recibimos datos válidos
+                setSensorData(data); 
             }
         };
 
@@ -22,5 +22,5 @@ export function useSensor() {
         return () => socket.close();
     }, []);
 
-    return sensorData; // Retornamos los datos del sensor
+    return sensorData; 
 }
